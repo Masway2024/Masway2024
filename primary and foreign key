@@ -1,0 +1,12 @@
+In a relational database, a primary key is a column or set of columns that uniquely identifies each row in a table. It must contain unique values and cannot have NULL values. Every table should have a primary key, as it ensures data integrity and provides a way to uniquely identify each record in the table. Typically, primary keys are implemented using a single column (often an auto-incrementing integer) but can also be composed of multiple columns if needed.
+
+For example, in a table of employees, the primary key could be an employee ID number. This ensures that each employee has a unique identifier in the database.
+
+A foreign key, on the other hand, is a column or set of columns in one table that references the primary key in another table. It establishes a relationship between two tables. The foreign key constraint ensures referential integrity, meaning that values in the foreign key column(s) must match values in the primary key column(s) of the referenced table or be NULL.
+
+Continuing with the example of employees, let's say we have another table for departments. In the employees table, there might be a column called "department_id" which is a foreign key referencing the primary key "id" in the departments table. This ensures that each employee is associated with a valid department in the database.
+
+So, in summary:
+
+Primary key: Uniquely identifies each row in a table.
+Foreign key: Establishes a relationship between tables by referencing the primary key of another table, ensuring referential integrity.
